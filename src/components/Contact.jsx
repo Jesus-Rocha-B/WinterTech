@@ -37,33 +37,30 @@ export default function Contact() {
       title: 'Email',
       value: 'contacto@tuagencia.com',
       href: 'mailto:contacto@tuagencia.com',
-      icon: <Mail className="w-6 h-6 text-[#2563eb]" strokeWidth={1.8} />,
+      icon: <Mail className="w-6 h-6 text-[#11245e]" strokeWidth={1.8} />,
     },
     {
       title: 'WhatsApp',
       value: '+51 999 999 999',
       href: 'https://wa.me/51999999999',
-      icon: <MessageCircle className="w-6 h-6 text-[#2563eb]" strokeWidth={1.8} />,
+      icon: <MessageCircle className="w-6 h-6 text-[#11245e]" strokeWidth={1.8} />,
     },
     {
-      title: 'Ubicación',
-      value: 'Lima, Perú',
+      title: 'UbicaciÃ³n',
+      value: 'Lima, PerÃº',
       href: '#',
-      icon: <MapPin className="w-6 h-6 text-[#2563eb]" strokeWidth={1.8} />,
+      icon: <MapPin className="w-6 h-6 text-[#11245e]" strokeWidth={1.8} />,
     },
   ];
 
   return (
-    <section id="contacto" className="py-16 lg:py-24 bg-white">
+    <section id="contacto" className="py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="mb-10 sm:mb-12">
-          <span className="text-xs sm:text-sm font-bold tracking-wider uppercase text-[#2563eb] block mb-2">
-            ESCRÍBENOS
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0e1b3d] tracking-tight">
-            ¿Listo para digitalizar tu negocio?
+        <div className="mb-12 sm:mb-16 px-2 sm:px-4">
+          <h2 className="section-title text-4xl sm:text-5xl font-extrabold text-[#11245e] tracking-tight">
+            Â¿Listo para digitalizar tu negocio?
           </h2>
         </div>
 
@@ -75,11 +72,11 @@ export default function Contact() {
             {submitted ? (
               <div className="py-16 text-center flex flex-col items-center">
                 <CheckCircle2 className="w-16 h-16 text-emerald-500 mb-4 animate-bounce" />
-                <h3 className="text-2xl font-bold text-[#0e1b3d] mb-2">
-                  ¡Mensaje Enviado con Éxito!
+                <h3 className="text-2xl font-bold text-[#11245e] mb-2">
+                  Â¡Mensaje Enviado con Ã‰xito!
                 </h3>
                 <p className="text-slate-500 text-sm max-w-sm">
-                  Gracias por contactarnos. Nuestro equipo revisará tu solicitud y te responderemos a la brevedad.
+                  Gracias por contactarnos. Nuestro equipo revisarÃ¡ tu solicitud y te responderemos a la brevedad.
                 </p>
               </div>
             ) : (
@@ -97,7 +94,7 @@ export default function Contact() {
                       placeholder="Tu nombre"
                       value={formData.fullName}
                       onChange={handleChange}
-                      className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition"
+                      className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8bc3e8] focus:bg-white transition"
                     />
                   </div>
                   <div>
@@ -111,7 +108,7 @@ export default function Contact() {
                       placeholder="tu@correo.com"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition"
+                      className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8bc3e8] focus:bg-white transition"
                     />
                   </div>
                 </div>
@@ -128,7 +125,7 @@ export default function Contact() {
                       placeholder="Nombre de tu empresa"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition"
+                      className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8bc3e8] focus:bg-white transition"
                     />
                   </div>
                   <div>
@@ -140,13 +137,13 @@ export default function Contact() {
                         name="projectType"
                         value={formData.projectType}
                         onChange={handleChange}
-                        className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition appearance-none cursor-pointer pr-10"
+                        className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#8bc3e8] focus:bg-white transition appearance-none cursor-pointer pr-10"
                       >
                         <option value="Sitio web">Sitio web</option>
-                        <option value="Apps móviles">Apps móviles</option>
-                        <option value="Automatización">Automatización</option>
-                        <option value="Diseño UI/UX">Diseño UI/UX</option>
-                        <option value="Consultoría / Otro">Consultoría / Otro</option>
+                        <option value="Apps mÃ³viles">Apps mÃ³viles</option>
+                        <option value="AutomatizaciÃ³n">AutomatizaciÃ³n</option>
+                        <option value="DiseÃ±o UI/UX">DiseÃ±o UI/UX</option>
+                        <option value="ConsultorÃ­a / Otro">ConsultorÃ­a / Otro</option>
                       </select>
                       <ChevronDown className="w-4 h-4 text-slate-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                     </div>
@@ -156,25 +153,25 @@ export default function Contact() {
                 {/* Row 3: Mensaje */}
                 <div>
                   <label className="block text-xs font-semibold text-slate-700 mb-2">
-                    ¿Qué te gustaría discutir con el equipo?
+                    Â¿QuÃ© te gustarÃ­a discutir con el equipo?
                   </label>
                   <textarea
                     rows={4}
                     name="message"
                     required
-                    placeholder="Cuéntanos sobre tu proyecto"
+                    placeholder="CuÃ©ntanos sobre tu proyecto"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition resize-none"
+                    className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8bc3e8] focus:bg-white transition resize-none"
                   ></textarea>
                 </div>
 
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-[#2563eb] hover:bg-blue-700 text-white font-medium text-sm sm:text-base py-3.5 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
+                  className="w-full bg-[#11245e] hover:bg-[#0b1948] text-white font-medium text-sm sm:text-base py-3.5 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
                 >
-                  Solicitar cotización
+                  Solicitar cotizaciÃ³n
                 </button>
               </form>
             )}
@@ -188,13 +185,13 @@ export default function Contact() {
                 href={item.href}
                 className="bg-white rounded-2xl border border-slate-100 shadow-xs hover:shadow-md transition-all duration-200 p-5 flex items-center gap-4 group"
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-50/80 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                <div className="w-12 h-12 rounded-xl bg-[#eef7fc] border border-[#d6ebf7] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-[#0e1b3d]">
+                  <h3 className="text-sm font-bold text-[#11245e]">
                     {item.title}
-                  </h4>
+                  </h3>
                   <p className="text-sm text-slate-500 mt-0.5">
                     {item.value}
                   </p>

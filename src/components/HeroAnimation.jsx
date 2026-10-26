@@ -36,7 +36,7 @@ export default function HeroAnimation() {
         } ${
           phase === 'thinking'
             ? 'bg-amber-400'
-            : 'bg-blue-500'
+            : 'bg-[#8bc3e8]'
         }`}
       ></div>
 
@@ -49,7 +49,7 @@ export default function HeroAnimation() {
         } ${
           phase === 'thinking'
             ? 'bg-gradient-to-tr from-amber-500 via-yellow-400 to-orange-400'
-            : 'bg-gradient-to-tr from-blue-600 via-sky-400 to-indigo-600'
+            : 'bg-gradient-to-tr from-[#11245e] via-[#8bc3e8] to-[#eef7fc]'
         }`}
       ></div>
 
@@ -106,8 +106,8 @@ export default function HeroAnimation() {
           <div
             className={`absolute bottom-6 left-6 sm:left-10 rounded-full transition-all duration-500 pointer-events-none animate-pulse ${
               isHovered
-                ? 'w-40 h-40 bg-blue-400/90 blur-2xl scale-130'
-                : 'w-28 h-28 bg-blue-500/65 blur-xl scale-100'
+                ? 'w-40 h-40 bg-[#8bc3e8]/90 blur-2xl scale-130'
+                : 'w-28 h-28 bg-[#8bc3e8]/65 blur-xl scale-100'
             }`}
           ></div>
 
@@ -122,8 +122,8 @@ export default function HeroAnimation() {
               alt="Personaje programando en laptop WinterTech"
               className={`w-full h-full object-contain transition-all duration-500 ${
                 isHovered
-                  ? 'drop-shadow-[0_20px_40px_rgba(37,99,235,0.85)]'
-                  : 'drop-shadow-[0_8px_20px_rgba(37,99,235,0.45)]'
+                  ? 'drop-shadow-[0_20px_40px_rgba(139,195,232,0.85)]'
+                  : 'drop-shadow-[0_8px_20px_rgba(139,195,232,0.45)]'
               }`}
               style={{ imageRendering: 'auto' }}
             />

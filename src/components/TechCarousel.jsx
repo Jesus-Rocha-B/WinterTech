@@ -51,12 +51,9 @@ export default function TechCarousel() {
   return (
     <div className="mt-20 pt-16 border-t border-slate-200/70">
       
-      {/* Encabezado: Solo STACK TECNOLÓGICO y Tecnologías que usamos */}
+      {/* Encabezado de tecnologías */}
       <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-        <span className="text-xs sm:text-sm font-bold tracking-wider uppercase text-[#2563eb] block mb-2">
-          STACK TECNOLÓGICO
-        </span>
-        <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0e1b3d] tracking-tight">
+        <h3 className="text-2xl sm:text-3xl font-extrabold text-[#11245e] tracking-tight">
           Tecnologías que usamos
         </h3>
       </div>

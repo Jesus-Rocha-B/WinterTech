@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import logoImg from '../assets/wintertech-logo.png';
 
 export default function Navbar() {
@@ -175,29 +175,30 @@ export default function Navbar() {
         scrolled ? 'ios-glass-bar-scrolled' : 'ios-glass-bar'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
         <div className="flex items-center justify-between h-20">
-          
-          {/* Logo WinterTech: actúa como botón de Inicio con transparencia 100% nativa */}
-          <a
-            href="#inicio"
-            onClick={handleLogoClick}
-            className="flex items-center group py-1.5 focus:outline-none"
-            title="Ir al inicio"
-          >
-            <img
-              src={logoImg}
-              alt="WinterTech"
-              className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
-            />
-          </a>
 
-          {/* Desktop Navigation en cápsula con píldora elástica líquida */}
-          <nav className="hidden md:flex items-center relative ios-glass-pill p-1.5 rounded-full shadow-xs">
+          {/* Cápsula principal con logo, secciones y llamada a la acción */}
+          <div className="nav-font hidden md:flex w-fit max-w-full mx-auto items-center justify-center gap-2 lg:gap-6 px-2 lg:px-3 py-1 ios-glass-pill rounded-full shadow-xs">
+            <a
+              href="#inicio"
+              onClick={handleLogoClick}
+              className="flex items-center group py-1.5 focus:outline-none shrink-0"
+              title="Ir al inicio"
+            >
+              <img
+                src={logoImg}
+                alt="WinterTech"
+                className="h-8 lg:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+              />
+            </a>
+
+          {/* Navegación de secciones con píldora activa */}
+          <nav className="flex items-center relative">
             
             {/* Píldora deslizante elástica con contorno oscuro y sombra exacta a tu referencia */}
             <span
-              className="absolute top-1.5 bottom-1.5 bg-[#2563eb] border-2 border-slate-900 rounded-full shadow-md shadow-blue-500/35 pointer-events-none will-change-[left,width] z-0"
+              className="absolute inset-y-0 bg-[#11245e] rounded-full shadow-md shadow-[#11245e]/25 pointer-events-none will-change-[left,width] z-0"
               style={{
                 left: `${pillStyle.left}px`,
                 width: `${pillStyle.width}px`,
@@ -215,10 +216,10 @@ export default function Navbar() {
                   ref={(el) => (tabsRef.current[link.id] = el)}
                   href={link.href}
                   onClick={(e) => handleLinkClick(e, link.id)}
-                  className={`relative z-10 px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-200 cursor-pointer select-none ${
+                  className={`relative z-10 px-5 lg:px-7 py-2.5 lg:py-3 rounded-full text-sm lg:text-base font-semibold transition-colors duration-200 cursor-pointer select-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8bc3e8] ${
                     isActive
                       ? 'text-white'
-                      : 'text-slate-700 hover:text-[#0e1b3d]'
+                      : 'text-slate-700 hover:text-[#11245e]'
                   }`}
                 >
                   {link.label}
@@ -227,17 +228,21 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* Botón de acción: Cotizar */}
-          <div className="hidden md:flex items-center">
-            <a
-              href="#contacto"
-              onClick={(e) => handleLinkClick(e, 'contacto')}
-              className="group relative inline-flex items-center gap-1.5 bg-[#2563eb] hover:bg-blue-700 text-white font-semibold text-sm px-6 py-2.5 rounded-xl shadow-sm shadow-blue-500/25 hover:shadow-lg hover:shadow-blue-500/35 hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all duration-200"
-            >
-              <span>Cotizar</span>
-              <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
           </div>
+
+          {/* Logo para pantallas móviles */}
+          <a
+            href="#inicio"
+            onClick={handleLogoClick}
+            className="md:hidden flex items-center group py-1.5 focus:outline-none"
+            title="Ir al inicio"
+          >
+            <img
+              src={logoImg}
+              alt="WinterTech"
+              className="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+            />
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -253,7 +258,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown con efecto glass */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-slate-100 ios-glass-bar-scrolled px-4 pt-3 pb-6 space-y-2 shadow-xl">
+        <div className="nav-font md:hidden border-t border-slate-100 ios-glass-menu px-4 pt-3 pb-6 space-y-2 shadow-xl">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
             return (
@@ -263,7 +268,7 @@ export default function Navbar() {
                 onClick={(e) => handleLinkClick(e, link.id)}
                 className={`block px-4 py-2.5 rounded-xl font-semibold text-sm transition-all ${
                   isActive
-                    ? 'bg-[#2563eb] text-white shadow-xs'
+                    ? 'bg-[#11245e] text-white shadow-xs ring-1 ring-[#8bc3e8]/60'
                     : 'text-slate-700 hover:bg-slate-100'
                 }`}
               >
@@ -271,15 +276,6 @@ export default function Navbar() {
               </a>
             );
           })}
-          <div className="pt-2">
-            <a
-              href="#contacto"
-              onClick={(e) => handleLinkClick(e, 'contacto')}
-              className="block w-full text-center bg-[#2563eb] hover:bg-blue-700 text-white font-semibold text-sm px-5 py-3 rounded-xl shadow-sm transition-all"
-            >
-              Cotizar
-            </a>
-          </div>
         </div>
       )}
     </header>

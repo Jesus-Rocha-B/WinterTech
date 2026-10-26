@@ -9,16 +9,19 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white text-slate-800 font-sans">
-      <Navbar />
-      <main>
-        <Hero />
-        <AboutUs />
-        <Services />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="winter-background min-h-screen text-slate-800 font-sans">
+      <div className="winter-snow" aria-hidden="true" />
+      <div className="relative z-10">
+        <Navbar />
+        <main>
+          <Hero />
+          <AboutUs />
+          <Services />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

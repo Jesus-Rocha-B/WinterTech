@@ -3,7 +3,7 @@ import logoImg from '../assets/wintertech-logo.png';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-100 bg-white py-10">
+    <footer className="border-t border-slate-100 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
         
         {/* Logo */}
@@ -17,21 +17,21 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs text-slate-400">
-          © {new Date().getFullYear()} WinterTech. Todos los derechos reservados.
+          Â© {new Date().getFullYear()} WinterTech. Todos los derechos reservados.
         </p>
 
         {/* Quick Links */}
         <div className="flex items-center gap-6">
-          <a href="#nosotros" className="text-xs text-slate-500 hover:text-blue-600 transition">
+          <a href="#nosotros" className="text-xs text-slate-500 hover:text-[#11245e] transition">
             Nosotros
           </a>
-          <a href="#servicios" className="text-xs text-slate-500 hover:text-blue-600 transition">
+          <a href="#servicios" className="text-xs text-slate-500 hover:text-[#11245e] transition">
             Servicios
           </a>
-          <a href="#proyectos" className="text-xs text-slate-500 hover:text-blue-600 transition">
+          <a href="#proyectos" className="text-xs text-slate-500 hover:text-[#11245e] transition">
             Proyectos
           </a>
-          <a href="#contacto" className="text-xs text-slate-500 hover:text-blue-600 transition">
+          <a href="#contacto" className="text-xs text-slate-500 hover:text-[#11245e] transition">
             Contacto
           </a>
         </div>

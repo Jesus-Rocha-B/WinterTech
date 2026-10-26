@@ -20,15 +20,12 @@ export default function AboutUs() {
   ];
 
   return (
-    <section id="nosotros" className="py-16 lg:py-24 bg-white">
+    <section id="nosotros" className="py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Encabezado original con eyebrow y título limpio */}
-        <div className="mb-10 sm:mb-12">
-          <span className="text-xs sm:text-sm font-bold tracking-wider uppercase text-[#2563eb] block mb-2">
-            QUIÉNES SOMOS
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0e1b3d] tracking-tight">
+        {/* Encabezado de secciÃ³n */}
+        <div className="mb-12 sm:mb-16 px-2 sm:px-4">
+          <h2 className="section-title text-4xl sm:text-5xl font-extrabold text-[#11245e] tracking-tight">
             Nosotros
           </h2>
         </div>
@@ -39,7 +36,7 @@ export default function AboutUs() {
           {/* ================= COLUMNA IZQUIERDA: NUESTRO EQUIPO ================= */}
           <div className="lg:col-span-6 bg-white rounded-3xl border border-slate-100 shadow-xs p-6 sm:p-8 flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-bold text-[#0e1b3d] mb-6">
+              <h3 className="text-xl font-bold text-[#11245e] mb-6">
                 Nuestro Equipo
               </h3>
 
@@ -47,7 +44,7 @@ export default function AboutUs() {
               <div className="grid grid-cols-2 gap-4 sm:gap-6 my-auto pt-2 pb-4">
                 {teamMembers.map((member) => (
                   <div key={member.name} className="flex flex-col items-center text-center group">
-                    {/* Contenedor compacto con proporción elegante */}
+                    {/* Contenedor compacto con proporciÃ³n elegante */}
                     <div className="w-32 h-40 sm:w-40 sm:h-48 rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-xs relative">
                       <img
                         src={member.image}
@@ -57,7 +54,7 @@ export default function AboutUs() {
                     </div>
 
                     {/* Nombre y Cargo */}
-                    <h4 className="font-bold text-[#0e1b3d] text-sm sm:text-base mt-3">
+                    <h4 className="font-bold text-[#11245e] text-sm sm:text-base mt-3">
                       {member.name}
                     </h4>
                     <p className="text-xs text-slate-500 font-medium mt-0.5 leading-snug">
@@ -69,28 +66,28 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* ================= COLUMNA DERECHA: MISIÓN Y VISIÓN ================= */}
+          {/* ================= COLUMNA DERECHA: MISIÃ“N Y VISIÃ“N ================= */}
           <div className="lg:col-span-6 flex flex-col justify-between gap-6">
             
-            {/* Tarjeta Misión */}
-            <div className="bg-white rounded-3xl border border-slate-100 border-l-4 border-l-[#2563eb] shadow-xs p-6 sm:p-7 flex-1 flex flex-col justify-center">
-              <h3 className="text-lg sm:text-xl font-bold text-[#0e1b3d] mb-2.5 flex items-center gap-2">
-                <Target className="w-5 h-5 text-[#2563eb]" />
-                <span>Misión</span>
+            {/* Tarjeta MisiÃ³n */}
+            <div className="bg-white rounded-3xl border border-slate-100 border-l-4 border-l-[#8bc3e8] shadow-xs p-6 sm:p-7 flex-1 flex flex-col justify-center">
+              <h3 className="text-lg sm:text-xl font-bold text-[#11245e] mb-2.5 flex items-center gap-2">
+                <Target className="w-5 h-5 text-[#11245e]" />
+                <span>MisiÃ³n</span>
               </h3>
               <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed">
-                En <strong>WinterTech</strong>, nuestra misión es diseñar, desarrollar e implementar software a la medida con estándares de ingeniería de primer nivel. Nos dedicamos a comprender a fondo las metas de cada negocio para crear plataformas web, aplicaciones móviles y automatizaciones que optimicen procesos operativos, reduzcan costos y aceleren el crecimiento digital sostenible de nuestros clientes.
+                En <strong>WinterTech</strong>, nuestra misiÃ³n es diseÃ±ar, desarrollar e implementar software a la medida con estÃ¡ndares de ingenierÃ­a de primer nivel. Nos dedicamos a comprender a fondo las metas de cada negocio para crear plataformas web, aplicaciones mÃ³viles y automatizaciones que optimicen procesos operativos, reduzcan costos y aceleren el crecimiento digital sostenible de nuestros clientes.
               </p>
             </div>
 
-            {/* Tarjeta Visión */}
+            {/* Tarjeta VisiÃ³n */}
             <div className="bg-white rounded-3xl border border-slate-100 border-l-4 border-l-[#f59e0b] shadow-xs p-6 sm:p-7 flex-1 flex flex-col justify-center">
-              <h3 className="text-lg sm:text-xl font-bold text-[#0e1b3d] mb-2.5 flex items-center gap-2">
+              <h3 className="text-lg sm:text-xl font-bold text-[#11245e] mb-2.5 flex items-center gap-2">
                 <Compass className="w-5 h-5 text-[#f59e0b]" />
-                <span>Visión</span>
+                <span>VisiÃ³n</span>
               </h3>
               <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed">
-                Aspiramos a consolidarnos como la agencia referente de desarrollo tecnológico y software personalizado, reconocida por nuestra excelencia técnica, arquitecturas modernas y capacidad de resolver desafíos de alta complejidad. Buscamos ser el socio estratégico de confianza que impulse a empresas y startups a liderar sus industrias en la era digital.
+                Aspiramos a consolidarnos como la agencia referente de desarrollo tecnolÃ³gico y software personalizado, reconocida por nuestra excelencia tÃ©cnica, arquitecturas modernas y capacidad de resolver desafÃ­os de alta complejidad. Buscamos ser el socio estratÃ©gico de confianza que impulse a empresas y startups a liderar sus industrias en la era digital.
               </p>
             </div>
 
