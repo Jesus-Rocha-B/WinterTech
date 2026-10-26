@@ -46,8 +46,8 @@ export default function Contact() {
       icon: <MessageCircle className="w-6 h-6 text-[#11245e]" strokeWidth={1.8} />,
     },
     {
-      title: 'UbicaciÃ³n',
-      value: 'Lima, PerÃº',
+      title: 'Ubicación',
+      value: 'Lima, Perú',
       href: '#',
       icon: <MapPin className="w-6 h-6 text-[#11245e]" strokeWidth={1.8} />,
     },
@@ -60,7 +60,7 @@ export default function Contact() {
         {/* Section Header */}
         <div className="mb-12 sm:mb-16 px-2 sm:px-4">
           <h2 className="section-title text-4xl sm:text-5xl font-extrabold text-[#11245e] tracking-tight">
-            Â¿Listo para digitalizar tu negocio?
+            ¿Listo para digitalizar tu negocio?
           </h2>
         </div>
 
@@ -73,10 +73,10 @@ export default function Contact() {
               <div className="py-16 text-center flex flex-col items-center">
                 <CheckCircle2 className="w-16 h-16 text-emerald-500 mb-4 animate-bounce" />
                 <h3 className="text-2xl font-bold text-[#11245e] mb-2">
-                  Â¡Mensaje Enviado con Ã‰xito!
+                  ¡Mensaje Enviado con Éxito!
                 </h3>
                 <p className="text-slate-500 text-sm max-w-sm">
-                  Gracias por contactarnos. Nuestro equipo revisarÃ¡ tu solicitud y te responderemos a la brevedad.
+                  Gracias por contactarnos. Nuestro equipo revisará tu solicitud y te responderemos a la brevedad.
                 </p>
               </div>
             ) : (
@@ -140,10 +140,10 @@ export default function Contact() {
                         className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#8bc3e8] focus:bg-white transition appearance-none cursor-pointer pr-10"
                       >
                         <option value="Sitio web">Sitio web</option>
-                        <option value="Apps mÃ³viles">Apps mÃ³viles</option>
-                        <option value="AutomatizaciÃ³n">AutomatizaciÃ³n</option>
-                        <option value="DiseÃ±o UI/UX">DiseÃ±o UI/UX</option>
-                        <option value="ConsultorÃ­a / Otro">ConsultorÃ­a / Otro</option>
+                        <option value="Apps móviles">Apps móviles</option>
+                        <option value="Automatización">Automatización</option>
+                        <option value="Diseño UI/UX">Diseño UI/UX</option>
+                        <option value="Consultoría / Otro">Consultoría / Otro</option>
                       </select>
                       <ChevronDown className="w-4 h-4 text-slate-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                     </div>
@@ -153,13 +153,13 @@ export default function Contact() {
                 {/* Row 3: Mensaje */}
                 <div>
                   <label className="block text-xs font-semibold text-slate-700 mb-2">
-                    Â¿QuÃ© te gustarÃ­a discutir con el equipo?
+                    ¿Qué te gustaría discutir con el equipo?
                   </label>
                   <textarea
                     rows={4}
                     name="message"
                     required
-                    placeholder="CuÃ©ntanos sobre tu proyecto"
+                    placeholder="Cuéntanos sobre tu proyecto"
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full bg-[#f8fafc] border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#8bc3e8] focus:bg-white transition resize-none"
@@ -171,7 +171,7 @@ export default function Contact() {
                   type="submit"
                   className="w-full bg-[#11245e] hover:bg-[#0b1948] text-white font-medium text-sm sm:text-base py-3.5 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
                 >
-                  Solicitar cotizaciÃ³n
+                  Solicitar cotización
                 </button>
               </form>
             )}

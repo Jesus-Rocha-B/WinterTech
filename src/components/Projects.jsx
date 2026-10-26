@@ -14,7 +14,7 @@ export default function Projects() {
       category: 'E-commerce',
       badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200/60',
       description:
-        'Plataforma de comercio electrÃ³nico con arquitectura moderna, catÃ¡logo dinÃ¡mico de productos, gestiÃ³n de Ã³rdenes y pasarela de pagos integrada.',
+        'Plataforma de comercio electrónico con arquitectura moderna, catálogo dinámico de productos, gestión de órdenes y pasarela de pagos integrada.',
       image: axislabImg,
       technologies: ['PHP', 'Laravel', 'MySQL'],
       accentColor: 'from-emerald-500/10 to-transparent',
@@ -22,10 +22,10 @@ export default function Projects() {
     {
       id: '02',
       title: 'PokeNex',
-      category: 'Landing Page Â· TCG',
+      category: 'Landing Page · TCG',
       badgeColor: 'bg-amber-50 text-amber-700 border-amber-200/60',
       description:
-        'Landing page y plataforma web temÃ¡tica para coleccionistas de cartas PokÃ©mon TCG, con interfaz fluida, renderizado dinÃ¡mico y alto rendimiento.',
+        'Landing page y plataforma web temática para coleccionistas de cartas Pokémon TCG, con interfaz fluida, renderizado dinámico y alto rendimiento.',
       image: pokenexImg,
       technologies: ['React', 'Python', 'Django'],
       accentColor: 'from-amber-500/10 to-transparent',
@@ -33,10 +33,10 @@ export default function Projects() {
     {
       id: '03',
       title: 'Coyllor',
-      category: 'GestiÃ³n de AlmacÃ©n / Productos',
+      category: 'Gestión de Almacén / Productos',
       badgeColor: 'bg-[#eef7fc] text-[#11245e] border-[#d6ebf7]',
       description:
-        'Software integral para la administraciÃ³n de inventario, control de entradas y salidas de almacÃ©n, trazabilidad de productos y reporterÃ­a en tiempo real.',
+        'Software integral para la administración de inventario, control de entradas y salidas de almacén, trazabilidad de productos y reportería en tiempo real.',
       image: coyllorImg,
       technologies: ['Laravel', 'PHP', 'MySQL'],
       accentColor: 'from-sky-500/10 to-transparent',
@@ -51,14 +51,14 @@ export default function Projects() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Encabezado de secciÃ³n */}
+        {/* Encabezado de sección */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6 px-2 sm:px-4">
           <div className="w-full md:flex-1">
             <h2 className="section-title text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#11245e] tracking-tight">
               Proyectos Destacados
             </h2>
             <p className="text-slate-500 text-sm sm:text-base mt-3 leading-relaxed">
-              Soluciones digitales a medida construidas con ingenierÃ­a de software sÃ³lida, alto rendimiento y diseÃ±o centrado en el usuario.
+              Soluciones digitales a medida construidas con ingeniería de software sólida, alto rendimiento y diseño centrado en el usuario.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function Projects() {
                   </span>
                 </div>
 
-                {/* Badge de categorÃ­a flotante */}
+                {/* Badge de categoría flotante */}
                 <div className="absolute top-3.5 left-3.5">
                   <span
                     className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md border ${project.badgeColor} bg-white/95 shadow-xs`}
@@ -105,7 +105,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* InformaciÃ³n y detalles de la tarjeta */}
+              {/* Información y detalles de la tarjeta */}
               <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-[#11245e] tracking-tight group-hover:text-[#11245e] transition-colors">
@@ -117,10 +117,10 @@ export default function Projects() {
                   </p>
                 </div>
 
-                {/* Stack de TecnologÃ­as */}
+                {/* Stack de Tecnologías */}
                 <div className="mt-6 pt-5 border-t border-slate-100">
                   <span className="text-[11px] uppercase font-bold tracking-wider text-slate-400 block mb-2.5">
-                    TecnologÃ­as utilizadas
+                    Tecnologías utilizadas
                   </span>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
@@ -138,7 +138,7 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Apartado inferior: TecnologÃ­as que usamos (Carrusel) */}
+        {/* Apartado inferior: Tecnologías que usamos (Carrusel) */}
         <TechCarousel />
 
       </div>

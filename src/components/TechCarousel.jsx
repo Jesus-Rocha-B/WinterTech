@@ -52,31 +52,31 @@ export default function TechCarousel() {
     <div className="mt-20 pt-16 border-t border-slate-200/70">
       
       {/* Encabezado de tecnologías */}
-      <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-        <h3 className="text-2xl sm:text-3xl font-extrabold text-[#11245e] tracking-tight">
+      <div className="mb-12 sm:mb-16 px-2 sm:px-4">
+        <h3 className="section-title text-4xl sm:text-5xl font-extrabold text-[#11245e] tracking-tight">
           Tecnologías que usamos
         </h3>
       </div>
 
-      {/* Carrusel continuo con los logos oficiales puros */}
-      <div className="relative w-full overflow-hidden py-4">
+      {/* Carrusel continuo con logos en tamaño grande y nítido */}
+      <div className="relative w-full overflow-hidden py-6 sm:py-8">
         
         {/* Degradados laterales para desvanecimiento suave */}
-        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-36 bg-gradient-to-r from-[#fcfbf8] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-36 bg-gradient-to-l from-[#fcfbf8] to-transparent z-10 pointer-events-none" />
 
         {/* Pista animada tipo marquee */}
-        <div className="animate-marquee flex items-center gap-10 sm:gap-14 lg:gap-16">
+        <div className="animate-marquee flex items-center gap-12 sm:gap-16 lg:gap-20">
           {marqueeItems.map((tech, idx) => (
             <div
               key={`${tech.name}-${idx}`}
-              className="flex items-center justify-center shrink-0 transition-transform duration-200 hover:scale-120 cursor-pointer"
+              className="flex items-center justify-center shrink-0 transition-transform duration-200 hover:scale-125 cursor-pointer"
               title={tech.name}
             >
               <img
                 src={tech.icon}
                 alt={tech.name}
-                className="h-11 sm:h-12 w-auto max-w-[80px] object-contain select-none"
+                className="h-16 sm:h-20 lg:h-22 w-auto max-w-[90px] sm:max-w-[120px] lg:max-w-[130px] object-contain select-none"
                 loading="lazy"
                 draggable={false}
               />

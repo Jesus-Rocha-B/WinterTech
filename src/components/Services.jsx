@@ -6,30 +6,30 @@ export default function Services() {
     {
       title: 'Aplicaciones Web',
       description:
-        'Desarrollo de plataformas y sistemas web robustos, escalables y seguros, con paneles de administraciÃ³n personalizados y arquitecturas modernas listas para crecer.',
+        'Desarrollo de plataformas y sistemas web robustos, escalables y seguros, con paneles de administración personalizados y arquitecturas modernas listas para crecer.',
       icon: <Globe className="w-6 h-6" strokeWidth={2} />,
       tags: ['React & Node.js', 'Arquitectura Escalable', 'Sistemas a Medida'],
     },
     {
-      title: 'Aplicaciones MÃ³viles',
+      title: 'Aplicaciones Móviles',
       description:
-        'CreaciÃ³n de aplicaciones para iOS y Android con experiencias de usuario cuidadas, diseÃ±o intuitivo, alto rendimiento e integraciÃ³n de servicios en tiempo real.',
+        'Creación de aplicaciones para iOS y Android con experiencias de usuario cuidadas, diseño intuitivo, alto rendimiento e integración de servicios en tiempo real.',
       icon: <Smartphone className="w-6 h-6" strokeWidth={2} />,
       tags: ['iOS & Android', 'Experiencia UI/UX', 'Rendimiento Fluido'],
     },
     {
       title: 'Landing Pages',
       description:
-        'PÃ¡ginas de aterrizaje de alto impacto visual y mÃ¡xima velocidad de carga, diseÃ±adas y estructuradas estratÃ©gicamente para captar clientes y maximizar conversiones.',
+        'Páginas de aterrizaje de alto impacto visual y máxima velocidad de carga, diseñadas y estructuradas estratégicamente para captar clientes y maximizar conversiones.',
       icon: <Rocket className="w-6 h-6" strokeWidth={2} />,
-      tags: ['Alta ConversiÃ³n', 'Ultra RÃ¡pidas', '100% Responsivas'],
+      tags: ['Alta Conversión', 'Ultra Rápidas', '100% Responsivas'],
     },
     {
-      title: 'ConsultorÃ­a Tech',
+      title: 'Consultoría Tech',
       description:
-        'AsesorÃ­a tÃ©cnica integral para definir arquitecturas de software, optimizar flujos de trabajo con automatizaciones y seleccionar el stack tecnolÃ³gico ideal para tu empresa.',
+        'Asesoría técnica integral para definir arquitecturas de software, optimizar flujos de trabajo con automatizaciones y seleccionar el stack tecnológico ideal para tu empresa.',
       icon: <Lightbulb className="w-6 h-6" strokeWidth={2} />,
-      tags: ['Estrategia Digital', 'AutomatizaciÃ³n', 'Decisiones TÃ©cnicas'],
+      tags: ['Estrategia Digital', 'Automatización', 'Decisiones Técnicas'],
     },
   ];
 
@@ -37,14 +37,14 @@ export default function Services() {
     <section id="servicios" className="py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Encabezado de SecciÃ³n */}
+        {/* Encabezado de Sección */}
         <div className="mb-12 sm:mb-16 px-2 sm:px-4">
           <h2 className="section-title text-4xl sm:text-5xl font-extrabold text-[#11245e] tracking-tight">
             Nuestros Servicios
           </h2>
         </div>
 
-        {/* CuadrÃ­cula 2x2 de tarjetas anchas redondeadas como en tu referencia */}
+        {/* Cuadrícula 2x2 de tarjetas anchas redondeadas como en tu referencia */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {services.map((service) => (
             <div
@@ -57,18 +57,18 @@ export default function Services() {
                   {service.icon}
                 </div>
 
-                {/* TÃ­tulo del Servicio */}
+                {/* Título del Servicio */}
                 <h3 className="text-xl sm:text-2xl font-bold text-[#11245e] mb-3 group-hover:text-[#11245e] transition-colors">
                   {service.title}
                 </h3>
 
-                {/* DescripciÃ³n Detallada */}
+                {/* Descripción Detallada */}
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                   {service.description}
                 </p>
               </div>
 
-              {/* Tags de CaracterÃ­sticas / TecnologÃ­as */}
+              {/* Tags de Características / Tecnologías */}
               <div className="mt-8 pt-5 border-t border-slate-100 flex flex-wrap gap-2">
                 {service.tags.map((tag) => (
                   <span

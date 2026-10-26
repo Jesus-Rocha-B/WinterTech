@@ -28,13 +28,13 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="mt-6 text-base sm:text-lg text-slate-500 max-w-xl leading-relaxed">
-              Lorem ipsum dolor sit amet: desarrollamos pÃ¡ginas web, aplicaciones y automatizaciones pensadas para tu empresa.
+              Desarrollamos páginas web, aplicaciones y automatizaciones pensadas para impulsar el crecimiento de tu empresa.
             </p>
 
             {/* Action Buttons con efectos interactivos de hover */}
             <div className="mt-8 flex flex-wrap items-center gap-4">
               
-              {/* BotÃ³n Principal: Empezar proyecto */}
+              {/* Botón Principal: Empezar proyecto */}
               <a
                 href="#contacto"
                 className="group relative inline-flex items-center gap-3 bg-[#11245e] border border-[#11245e] text-white font-semibold text-sm sm:text-base px-7 py-3 rounded-xl shadow-sm hover:bg-[#1b3678] hover:border-[#1b3678] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all duration-200 cursor-pointer"
@@ -43,7 +43,7 @@ export default function Hero() {
                 <ArrowRight className="w-4 h-4 text-[#8bc3e8] transition-transform duration-200 group-hover:translate-x-1" />
               </a>
 
-              {/* BotÃ³n Secundario: Ver proyectos */}
+              {/* Botón Secundario: Ver proyectos */}
               <a
                 href="#proyectos"
                 className="group relative inline-flex items-center gap-3 bg-[#fcfbf8] border border-[#cfe3f0] hover:border-[#8bc3e8] text-[#11245e] font-semibold text-sm sm:text-base px-7 py-3 rounded-xl hover:bg-[#eef7fc] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all duration-200 cursor-pointer"

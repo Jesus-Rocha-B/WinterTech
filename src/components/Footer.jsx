@@ -17,7 +17,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs text-slate-400">
-          Â© {new Date().getFullYear()} WinterTech. Todos los derechos reservados.
+          © {new Date().getFullYear()} WinterTech. Todos los derechos reservados.
         </p>
 
         {/* Quick Links */}

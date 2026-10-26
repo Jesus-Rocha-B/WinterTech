@@ -87,7 +87,7 @@
   -webkit-backdrop-filter: blur(24px) saturate(190%);
 }
 
-/* Marquee continuo para el carrusel de tecnologÃ­as */
+/* Marquee continuo para el carrusel de tecnologías */
 @keyframes marqueeScroll {
   0% {
     transform: translateX(0%);
